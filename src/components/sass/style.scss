@@ -1,0 +1,64 @@
+@import '~mdb-ui-kit/css/mdb.min.css';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to top, rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.5)),
+        url('../images/background.jpg') no-repeat center center/cover;
+}
+
+.container-fluid {
+    padding-top: 2rem;
+    max-width: 85%;
+    #result {
+        .card {
+            .card-body {
+                .loading {
+                    display: none;
+                    margin: auto;
+                    width: 200px;
+                    height: 200px;
+                }
+                .infos {
+                    margin-top: 2rem;
+                    .crypto-img {
+                        width: 60px;
+                        height: 60px;
+                        display: block;
+                        margin: auto;
+                    }
+                    p {
+                        font-size: 17.5px;
+                        margin-top: 25px;
+                        &:first-child {
+                            margin-top: 0;
+                        }
+                        span {
+                            color: #118de0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .top-card {
+        border-radius: 10px;
+        padding: 40px 0;
+        .card-body {
+            width: 90%;
+            .form-control {
+                height: 50px;
+            }
+            #btn-search {
+                margin-top: 50px;
+                padding: 13px 0;
+                font-size: 14px;
+            }
+            label {
+                color: #00000083;
+                font-size: 14.5px;
+            }
+        }
+    }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body>
+
+  <!-- TITLE -->
+  <div class="container pt-5">
+    <h1 class="text-white text-center display-4">Cryptocurrency Rates Calculator</h1>
+  </div>
+  <br>
+  <!-- MAIN BOX -->
+  <div class="container-fluid">
+    <div class="row justify-content-around">
+      <div class="col-md-5">
+        <div id="result">
+          <div class="card">
+            <div class="card-body p-4">
+              <div class="header text-left">
+                <h4 class="font-weight-bold">Result</h4>
+              </div>
+              <img src="./images/spinner.gif" class="loading" alt="">
+              <div id="main-info">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card top-card border border-1">
+          <div class="card-title text-center">
+            <h2 class="font-weight-bold">Search Top News</h2>
+          </div>
+          <div class="card-body mx-auto">
+            <div class="select mt-3">
+              <label>currency</label>
+              <select id="currency" class="form-control form-select">
+                <option value="" disabled selected>- Select Currency - </option>
+                <option value="USD">Dollor</option>
+                <option value="GBP">Pound</option>
+                <option value="EUR">Euro</option>
+              </select>
+            </div>
+            <div class="select mt-3">
+              <label>cryptocurrency</label>
+              <select id="cryptocurrency" class="form-control form-select">
+                <option value="" disabled selected>- Select Cryptocurrency -</option>
+                <option value="BTC">Bitcoin</option>
+                <option value="ETH">Ethereum</option>
+                <option value="XRP">Ripple</option>
+              </select>
+            </div>
+            <button id="btn-search" class="btn btn-danger btn-block">Get Valuation</button>
+            <div id="message"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
